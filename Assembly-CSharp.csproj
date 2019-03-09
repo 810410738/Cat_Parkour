@@ -69,6 +69,7 @@
     <Compile Include="Assets\script\ground_move.cs" />
     <Compile Include="Assets\script\MenuActions.cs" />
     <Compile Include="Assets\script\player_move.cs" />
+    <Compile Include="Assets\script\RawIamgeControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/LiangZhenjie/Documents/Cat_Parkour/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
