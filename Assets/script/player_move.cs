@@ -10,7 +10,7 @@ public class player_move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.PlayMusic("music_background");
+        
     }
 
     // Update is called once per frame
@@ -18,6 +18,8 @@ public class player_move : MonoBehaviour
     {
         //左右移动
         float h = Input.GetAxis("Horizontal");
+        /*
+       
         Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
         if (h > 0.1f)
         {
@@ -29,6 +31,7 @@ public class player_move : MonoBehaviour
             velocity.x -= move_v;
             GetComponent<Rigidbody2D>().velocity = velocity;
         }
+        */
         //修改朝向
         if (h > 0.05f)
         {

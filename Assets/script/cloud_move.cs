@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class background_move : MonoBehaviour
+public class cloud_move : MonoBehaviour
 {
-    public float speed = 0.2f;
+    public float speed = 0.8f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,5 +23,4 @@ public class background_move : MonoBehaviour
         }
         transform.localPosition = v;
     }
-
 }

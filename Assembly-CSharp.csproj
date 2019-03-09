@@ -64,9 +64,11 @@
     <Compile Include="Assets\script\AudioManager.cs" />
     <Compile Include="Assets\script\background_move.cs" />
     <Compile Include="Assets\script\background_move_1.cs" />
+    <Compile Include="Assets\script\cloud_move.cs" />
+    <Compile Include="Assets\script\glueControl.cs" />
+    <Compile Include="Assets\script\ground_move.cs" />
     <Compile Include="Assets\script\MenuActions.cs" />
     <Compile Include="Assets\script\player_move.cs" />
-    <Compile Include="Assets\script\SozControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/LiangZhenjie/Documents/Cat_Parkour/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
