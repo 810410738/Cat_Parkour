@@ -5,7 +5,7 @@ using UnityEngine;
 public class background_move : MonoBehaviour
 {
     public float speed = 0.2f;
-
+    public float move = 23.55f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,9 @@ public class background_move : MonoBehaviour
     {
         Vector2 v = transform.localPosition;
         v.x -= speed * Time.deltaTime;
-        if (v.x < -23.55f)
+        if (v.x < -move)
         {
-            v.x += 23.55f * 2;
+            v.x += move * 2;
         }
         transform.localPosition = v;
     }
