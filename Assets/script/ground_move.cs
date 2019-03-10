@@ -34,6 +34,5 @@ public class ground_move : MonoBehaviour
             Destroy(gameObject);
         }
         transform.localPosition = v;
-        print(gameObject.name +" :"+ "v is :" + v);
     }
 }

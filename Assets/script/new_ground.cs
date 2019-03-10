@@ -21,7 +21,6 @@ public class new_ground : MonoBehaviour
     {
         //创建新地形
         int x = Random.Range(0, grounds.Length);
-        print("x is :" + x);
         GameObject temp =  Instantiate(grounds[x], transform);
         temp.transform.localPosition = new Vector3(22.3f, 0, 1);
 
