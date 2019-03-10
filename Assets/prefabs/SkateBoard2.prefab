@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4553425178307757806}
   m_Layer: 0
   m_Name: SkateBoard2
-  m_TagString: Untagged
+  m_TagString: reward_speedup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,3 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda4bd9cb73cf204599a9880219adbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: 10

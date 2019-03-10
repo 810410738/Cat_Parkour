@@ -16,8 +16,8 @@ public class MainController : MonoBehaviour
 
     private void Start()
     {
-        level = GameObject.Find("LevelController").GetComponent<LevelController>().GetChosenLevel();
-        levelData = LevelData.GetData(level);
+        //level = GameObject.Find("LevelController").GetComponent<LevelController>().GetChosenLevel();
+        //levelData = LevelData.GetData(level);
     }
 
     private void Update()
@@ -44,9 +44,10 @@ public class MainController : MonoBehaviour
         scoreTextObject.GetComponent<Text>().text = "score:" + goal;
     }
 
-    public void SpeedUp(float substractTime, float lastTime)//when you speed up, speedUP()
+    public void SpeedUp(float substractTime, float lastTime)//when you speed up, speedUP(),第一个参数是加速效果，第二个参数是加速持续时间
     {
-        this.time -= time;
+        speedUpSubstractTime = substractTime;
+        speedUpDuration = lastTime;
     }
 }
 

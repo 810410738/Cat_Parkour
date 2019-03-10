@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8268294321243863968}
   - component: {fileID: 2455420051984442965}
-  - component: {fileID: 2401318862652526329}
   - component: {fileID: 5894986762761347736}
-  - component: {fileID: 8536745589574249042}
+  - component: {fileID: 4700254872706282599}
   m_Layer: 0
   m_Name: Glue1
   m_TagString: Untagged
@@ -82,18 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2401318862652526329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292394319460294647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cda4bd9cb73cf204599a9880219adbaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &5894986762761347736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120,7 +107,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &8536745589574249042
+--- !u!114 &4700254872706282599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,3 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda4bd9cb73cf204599a9880219adbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: 10
