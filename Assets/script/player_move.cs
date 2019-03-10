@@ -29,7 +29,7 @@ public class player_move : MonoBehaviour
         
        
         Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
-        if (h > 0.1f)
+        if (h > 0.05f)
         {
             velocity.x += move_v;
             GetComponent<Rigidbody2D>().velocity = velocity;
@@ -43,11 +43,11 @@ public class player_move : MonoBehaviour
         //修改朝向
         if (h > 0.05f)
         {
-            transform.localScale = new Vector3(0.394f, 0.355f, 1);
+            transform.localScale = new Vector3(0.1415232f, 0.1381166f, 1);
         }
         else if (h < -0.05f)
         {
-            transform.localScale = new Vector3(-0.394f, 0.355f, 1);
+            transform.localScale = new Vector3(-0.1415232f, 0.1381166f, 1);
         }
 
         //跳跃
