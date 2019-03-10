@@ -20,8 +20,8 @@ public class glueControl : MonoBehaviour
     {
         if (collision.tag == "player")
        {
-        Destroy(gameObject);
-        AudioManager.Instance.PlaySound("eat");
+            Destroy(gameObject);
+            AudioManager.Instance.PlaySound("eat");
        }
     }
 }

@@ -78,7 +78,7 @@ public class player_move : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-      
+        //碰到敌人就会死
         if (col.tag == "enemy"&& HP>0)
         {
             HP--;
