@@ -7,11 +7,12 @@ public class ground_move : MonoBehaviour
     public float speed = 4f;
     public float move = 18.1f;
     private player_move player;
-    public GameObject[] grounds;
+    public GameObject ground;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("player").GetComponent<player_move>();
+        ground = GameObject.FindWithTag("Ground");
     }
 
     // Update is called once per frame
@@ -26,20 +27,13 @@ public class ground_move : MonoBehaviour
         v.x -= speed * Time.deltaTime;
         if (v.x < -move)
         {
-            v.x += move * 2;
+            ground.GetComponent<new_ground>().NewGround();
+            // v.x += move * 2;
             //切换地形
             //删除旧地形
-            int childCount = transform.childCount;
-            for (int i = 0; i < childCount; i++)
-            {
-                Destroy(transform.GetChild(i).gameObject);
-            }
-            //创建新地形
-            int x = Random.Range(0, grounds.Length);
-            print("x is :" + x);
-            Instantiate(grounds[x],transform);
-
+            Destroy(gameObject);
         }
         transform.localPosition = v;
+        print(gameObject.name +" :"+ "v is :" + v);
     }
 }

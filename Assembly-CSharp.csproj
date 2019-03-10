@@ -68,6 +68,7 @@
     <Compile Include="Assets\script\glueControl.cs" />
     <Compile Include="Assets\script\ground_move.cs" />
     <Compile Include="Assets\script\MenuActions.cs" />
+    <Compile Include="Assets\script\new_ground.cs" />
     <Compile Include="Assets\script\player_move.cs" />
     <Compile Include="Assets\script\RawIamgeControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
